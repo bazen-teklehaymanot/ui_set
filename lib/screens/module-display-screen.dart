@@ -10,8 +10,10 @@ class ModuleDisplayScreen extends StatelessWidget {
         title: Text('Module Container'),
       ),
       body: Column(
-        children: <Widget>[...initializer.getTemplateWidgets(context) ],
-      ),
+        children: <Widget>[
+          Row( children: <Widget>[...initializer.getTemplateWidgets(context) ],)
+        ],
+      )
     );
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ui_set/screens/module-display-screen.dart';
 import 'package:ui_set/templates/auth/auth-template-facade.dart';
 import 'package:ui_set/templates/quiz/quie-template-facade.dart';
+import 'package:ui_set/widget/template-card.dart';
 
 class AppInitializer{
   final QuizTemplateFacade quizTemplateFacade = QuizTemplateFacade();
@@ -19,8 +20,9 @@ class AppInitializer{
 
   List<Widget> getTemplateWidgets(BuildContext context){
     List<Widget> templateWidgets = List();
-    templateWidgets.add(authTemplateFacade.getTemplateWidget(context));
-    templateWidgets.add(quizTemplateFacade.getTemplateWidget(context));
+
+    templateWidgets.add(TemplateCard(authTemplateFacade.getTemplateWidget()));
+    templateWidgets.add(TemplateCard(quizTemplateFacade.getTemplateWidget()));
     return templateWidgets;
   }
 
