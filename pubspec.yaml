@@ -45,6 +45,7 @@ flutter:
     - assets/images/auth-icon.png
     - assets/images/quiz-icon-1.png
     - assets/images/quiz-icon-2.png
+    - assets/images/widgets.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -18,7 +18,7 @@ class AuthTemplateFacade extends TemplateBase{
   }
 
   @override
-  TemplateMetadata getTemplateWidget()=> TemplateMetadata(
+  TemplateMetadata getTemplateMetaData()=> TemplateMetadata(
     name: 'Authentication',
     description: 'Simple Auth UI/UX',
     icon: AuthAssets.templateIcon,

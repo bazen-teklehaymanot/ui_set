@@ -16,7 +16,7 @@ class QuizTemplateFacade extends TemplateBase{
   }
 
   @override
-  TemplateMetadata getTemplateWidget()=>TemplateMetadata(
+  TemplateMetadata getTemplateMetaData()=>TemplateMetadata(
     name:'Quiz',
     description:'Simple Quiz module',
     indexRoute: QuizTemplateRoutes.quizTypeListScreen,
